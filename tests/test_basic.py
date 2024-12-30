@@ -1,5 +1,7 @@
-from django.test import TestCase
+from django.test import SimpleTestCase
+from django.conf import settings
 
-class BasicTestCase(TestCase):
-    def test_hello_world(self):
-        self.assertEqual("hello world", "hello world")
+
+class SettingsTest(SimpleTestCase):
+    def test_debug_is_false_in_production(self):
+        self.assertFalse(settings.DEBUG)
