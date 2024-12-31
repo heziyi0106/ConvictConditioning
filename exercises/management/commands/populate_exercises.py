@@ -1,60 +1,54 @@
 from django.core.management.base import BaseCommand
+from django.utils.translation import gettext_lazy as _
 
 class Command(BaseCommand):
-    help = 'Populate database with initial exercises and levels for Convict Conditioning'
+    help = _('Populate database with initial exercises and levels for Convict Conditioning')
 
     def handle(self, *args, **kwargs):
         from exercises.models import Skill, ExerciseLevel
 
         big_six = [
-            {"name": "Push-Up", "category": "Upper Body", "levels": [
-                "Wall Push-Up", "Incline Push-Up", "Kneeling Push-Up", "Half Push-Up", "Full Push-Up",
-                "Close Push-Up", "Uneven Push-Up", "1/2 One Arm Push-Up", "Lever Push-Up", "One Arm Push-Up"
+            {"name": _("Push-Up"), "category": _("Upper Body"), "levels": [
+                _("Wall Push-Up"), _("Incline Push-Up"), _("Kneeling Push-Up"), _("Half Push-Up"), _("Full Push-Up"),
+                _("Close Push-Up"), _("Uneven Push-Up"), _("1/2 One Arm Push-Up"), _("Lever Push-Up"), _("One Arm Push-Up")
             ]},
-            {"name": "Pull-Up", "category": "Upper Body", "levels": [
-                "Vertical Pulls", "Horizontal Pulls", "Jackknife Pulls", "Half Pull-Ups", "Full Pull-Ups",
-                "Close Pull-Ups", "Uneven Pull-Ups", "1/2 One Arm Pull-Up", "Assisted One Arm Pull-Up", "One Arm Pull-Up"
+            {"name": _("Pull-Up"), "category": _("Upper Body"), "levels": [
+                _("Vertical Pulls"), _("Horizontal Pulls"), _("Jackknife Pulls"), _("Half Pull-Ups"), _("Full Pull-Ups"),
+                _("Close Pull-Ups"), _("Uneven Pull-Ups"), _("1/2 One Arm Pull-Up"), _("Assisted One Arm Pull-Up"), _("One Arm Pull-Up")
             ]},
-            {"name": "Squat", "category": "Lower Body", "levels": [
-                "Shoulderstand Squats", "Jackknife Squats", "Supported Squats", "Half Squats", "Full Squats",
-                "Close Squats", "Uneven Squats", "1/2 One Leg Squat", "Assisted One Leg Squat", "One Leg Squat"
+            {"name": _("Squat"), "category": _("Lower Body"), "levels": [
+                _("Shoulderstand Squats"), _("Jackknife Squats"), _("Supported Squats"), _("Half Squats"), _("Full Squats"),
+                _("Close Squats"), _("Uneven Squats"), _("1/2 One Leg Squat"), _("Assisted One Leg Squat"), _("One Leg Squat")
             ]},
-            {"name": "Leg Raise", "category": "Core", "levels": [
-                "Knee Tucks", "Flat Knee Raises", "Flat Bent Leg Raises", "Flat Frog Raises", "Flat Straight Leg Raises",
-                "Hanging Knee Raises", "Hanging Bent Leg Raises", "Hanging Frog Raises", "Partial Straight Leg Raises", "Hanging Straight Leg Raises"
+            {"name": _("Leg Raise"), "category": _("Core"), "levels": [
+                _("Knee Tucks"), _("Flat Knee Raises"), _("Flat Bent Leg Raises"), _("Flat Frog Raises"), _("Flat Straight Leg Raises"),
+                _("Hanging Knee Raises"), _("Hanging Bent Leg Raises"), _("Hanging Frog Raises"), _("Partial Straight Leg Raises"), _("Hanging Straight Leg Raises")
             ]},
-            {"name": "Bridge", "category": "Core", "levels": [
-                "Short Bridges", "Straight Bridges", "Angled Bridges", "Head Bridges", "Half Bridges",
-                "Full Bridges", "Wall Walking (Down)", "Wall Walking (Up)", "Closing Bridges", "Stand-to-Stand Bridges"
+            {"name": _("Bridge"), "category": _("Core"), "levels": [
+                _("Short Bridges"), _("Straight Bridges"), _("Angled Bridges"), _("Head Bridges"), _("Half Bridges"),
+                _("Full Bridges"), _("Wall Walking (Down)"), _("Wall Walking (Up)"), _("Closing Bridges"), _("Stand-to-Stand Bridges")
             ]},
-            {"name": "Handstand Push-Up", "category": "Upper Body", "levels": [
-                "Wall Headstands", "Crow Stands", "Wall Handstands", "Half Handstand Push-Ups", "Handstand Push-Ups",
-                "Close Handstand Push-Ups", "Uneven Handstand Push-Ups", "1/2 One Arm Handstand Push-Up", "Lever Handstand Push-Up", "One Arm Handstand Push-Up"
+            {"name": _("Handstand Push-Up"), "category": _("Upper Body"), "levels": [
+                _("Wall Headstands"), _("Crow Stands"), _("Wall Handstands"), _("Half Handstand Push-Ups"), _("Handstand Push-Ups"),
+                _("Close Handstand Push-Ups"), _("Uneven Handstand Push-Ups"), _("1/2 One Arm Handstand Push-Up"), _("Lever Handstand Push-Up"), _("One Arm Handstand Push-Up")
             ]},
         ]
 
         trifecta = [
-            {"name": "L-Sit", "category": "Core", "levels": [
-                "Short Sit", "Parallel L-Sit", "Advanced L-Sit", "V-Sit"
+            {"name": _("L-Sit"), "category": _("Core"), "levels": [
+                _("Tuck Hold"), _("Flat Tuck Hold"), _("Flat Tuck L-Sit"), _("One Leg Flat Tuck L-Sit"), _("L-Sit")
             ]},
-            {"name": "Bridge Hold", "category": "Spinal", "levels": [
-                "Short Bridge Hold", "Straight Bridge Hold", "Full Bridge Hold"
+            {"name": _("Back Lever"), "category": _("Core"), "levels": [
+                _("Tuck Back Lever"), _("Flat Tuck Back Lever"), _("One Leg Flat Tuck Back Lever"), _("Straddle Back Lever"), _("Back Lever")
             ]},
-            {"name": "Twist Hold", "category": "Rotational", "levels": [
-                "Beginner Twist", "Intermediate Twist", "Advanced Twist"
+            {"name": _("Front Lever"), "category": _("Core"), "levels": [
+                _("Tuck Front Lever"), _("Flat Tuck Front Lever"), _("One Leg Flat Tuck Front Lever"), _("Straddle Front Lever"), _("Front Lever")
             ]},
         ]
 
-        # Populate Big Six
-        for skill_data in big_six:
+        for skill_data in big_six + trifecta:
             skill, created = Skill.objects.get_or_create(name=skill_data["name"], category=skill_data["category"])
-            for i, level in enumerate(skill_data["levels"], start=1):
-                ExerciseLevel.objects.get_or_create(skill=skill, level_number=i, description=level)
-
-        # Populate Trifecta
-        for skill_data in trifecta:
-            skill, created = Skill.objects.get_or_create(name=skill_data["name"], category=skill_data["category"])
-            for i, level in enumerate(skill_data["levels"], start=1):
-                ExerciseLevel.objects.get_or_create(skill=skill, level_number=i, description=level)
+            for level_number, level_name in enumerate(skill_data["levels"], start=1):
+                ExerciseLevel.objects.get_or_create(skill=skill, level_number=level_number, description=level_name)
 
         self.stdout.write(self.style.SUCCESS('Successfully populated the database with exercises and levels.'))

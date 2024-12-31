@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-31 10:08+0800\n"
+"POT-Creation-Date: 2024-12-31 10:14+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,174 +16,173 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: community/models.py:8 community/models.py:22 community/models.py:34
 msgid "使用者"
-msgstr "使用者"
+msgstr "User"
 
 #: community/models.py:10 community/models.py:24
 msgid "內容"
-msgstr "內容"
+msgstr "Content"
 
 #: community/models.py:12 community/models.py:25 community/models.py:36
 msgid "建立時間"
-msgstr "建立時間"
+msgstr "Created Time"
 
 #: community/models.py:20 community/models.py:32
 msgid "貼文"
-msgstr "貼文"
+msgstr "Post"
 
 #: exercises/management/commands/populate_exercises.py:5
 msgid ""
 "Populate database with initial exercises and levels for Convict Conditioning"
-msgstr "初始化囚徒健身動作及級別到資料庫"
+msgstr "Populate database with initial exercises and levels for Convict Conditioning"
 
 #: exercises/management/commands/populate_exercises.py:11
 msgid "Push-Up"
-msgstr "伏地挺身"
+msgstr "Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:11
 #: exercises/management/commands/populate_exercises.py:15
 #: exercises/management/commands/populate_exercises.py:31
 msgid "Upper Body"
-msgstr "上半身"
+msgstr "Upper Body"
 
 #: exercises/management/commands/populate_exercises.py:12
 msgid "Wall Push-Up"
-msgstr "牆壁伏地挺身"
+msgstr "Wall Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:12
 msgid "Incline Push-Up"
-msgstr "斜板伏地挺身"
+msgstr "Incline Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:12
 msgid "Kneeling Push-Up"
-msgstr "跪姿伏地挺身"
+msgstr "Kneeling Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:12
 msgid "Half Push-Up"
-msgstr "半程伏地挺身"
+msgstr "Half Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:12
 msgid "Full Push-Up"
-msgstr "標準伏地挺身"
+msgstr "Full Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:13
 msgid "Close Push-Up"
-msgstr "窄距伏地挺身"
+msgstr "Close Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:13
 msgid "Uneven Push-Up"
-msgstr "不平衡伏地挺身"
+msgstr "Uneven Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:13
 msgid "1/2 One Arm Push-Up"
-msgstr "半程單臂伏地挺身"
+msgstr "1/2 One Arm Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:13
 msgid "Lever Push-Up"
-msgstr "槓桿伏地挺身"
+msgstr "Lever Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:13
 msgid "One Arm Push-Up"
-msgstr "單臂伏地挺身"
+msgstr "One Arm Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:15
 msgid "Pull-Up"
-msgstr "引體向上"
+msgstr "Pull-Up"
 
 #: exercises/management/commands/populate_exercises.py:16
 msgid "Vertical Pulls"
-msgstr "垂直拉力"
+msgstr "Vertical Pulls"
 
 #: exercises/management/commands/populate_exercises.py:16
 msgid "Horizontal Pulls"
-msgstr "水平拉力"
+msgstr "Horizontal Pulls"
 
 #: exercises/management/commands/populate_exercises.py:16
 msgid "Jackknife Pulls"
-msgstr "折刀拉力"
+msgstr "Jackknife Pulls"
 
 #: exercises/management/commands/populate_exercises.py:16
 msgid "Half Pull-Ups"
-msgstr "半程引體向上"
+msgstr "Half Pull-Ups"
 
 #: exercises/management/commands/populate_exercises.py:16
 msgid "Full Pull-Ups"
-msgstr "標準引體向上"
+msgstr "Full Pull-Ups"
 
 #: exercises/management/commands/populate_exercises.py:17
 msgid "Close Pull-Ups"
-msgstr "窄距引體向上"
+msgstr "Close Pull-Ups"
 
 #: exercises/management/commands/populate_exercises.py:17
 msgid "Uneven Pull-Ups"
-msgstr "不平衡引體向上"
+msgstr "Uneven Pull-Ups"
 
 #: exercises/management/commands/populate_exercises.py:17
 msgid "1/2 One Arm Pull-Up"
-msgstr "半程單臂引體向上"
+msgstr "1/2 One Arm Pull-Up"
 
 #: exercises/management/commands/populate_exercises.py:17
 msgid "Assisted One Arm Pull-Up"
-msgstr "輔助單臂引體向上"
+msgstr "Assisted One Arm Pull-Up"
 
 #: exercises/management/commands/populate_exercises.py:17
 msgid "One Arm Pull-Up"
-msgstr "單臂引體向上"
+msgstr "One Arm Pull-Up"
 
 #: exercises/management/commands/populate_exercises.py:19
 msgid "Squat"
-msgstr "深蹲"
+msgstr "Squat"
 
 #: exercises/management/commands/populate_exercises.py:19
 msgid "Lower Body"
-msgstr "下半身"
+msgstr "Lower Body"
 
 #: exercises/management/commands/populate_exercises.py:20
 msgid "Shoulderstand Squats"
-msgstr "肩倒立深蹲"
+msgstr "Shoulderstand Squats"
 
 #: exercises/management/commands/populate_exercises.py:20
 msgid "Jackknife Squats"
-msgstr "折刀深蹲"
+msgstr "Jackknife Squats"
 
 #: exercises/management/commands/populate_exercises.py:20
 msgid "Supported Squats"
-msgstr "支撐深蹲"
+msgstr "Supported Squats"
 
 #: exercises/management/commands/populate_exercises.py:20
 msgid "Half Squats"
-msgstr "半程深蹲"
+msgstr "Half Squats"
 
 #: exercises/management/commands/populate_exercises.py:20
 msgid "Full Squats"
-msgstr "標準深蹲"
+msgstr "Full Squats"
 
 #: exercises/management/commands/populate_exercises.py:21
 msgid "Close Squats"
-msgstr "窄距深蹲"
+msgstr "Close Squats"
 
 #: exercises/management/commands/populate_exercises.py:21
 msgid "Uneven Squats"
-msgstr "不平衡深蹲"
+msgstr "Uneven Squats"
 
 #: exercises/management/commands/populate_exercises.py:21
 msgid "1/2 One Leg Squat"
-msgstr "半程單腿深蹲"
+msgstr "1/2 One Leg Squat"
 
 #: exercises/management/commands/populate_exercises.py:21
 msgid "Assisted One Leg Squat"
-msgstr "輔助單腿深蹲"
+msgstr "Assisted One Leg Squat"
 
 #: exercises/management/commands/populate_exercises.py:21
 msgid "One Leg Squat"
-msgstr "單腿深蹲"
+msgstr "One Leg Squat"
 
 #: exercises/management/commands/populate_exercises.py:23
 msgid "Leg Raise"
-msgstr "抬腿"
+msgstr "Leg Raise"
 
 #: exercises/management/commands/populate_exercises.py:23
 #: exercises/management/commands/populate_exercises.py:27
@@ -191,241 +190,239 @@ msgstr "抬腿"
 #: exercises/management/commands/populate_exercises.py:41
 #: exercises/management/commands/populate_exercises.py:44
 msgid "Core"
-msgstr "核心"
+msgstr "Core"
 
 #: exercises/management/commands/populate_exercises.py:24
 msgid "Knee Tucks"
-msgstr "膝蓋收縮"
+msgstr "Knee Tucks"
 
 #: exercises/management/commands/populate_exercises.py:24
 msgid "Flat Knee Raises"
-msgstr "平躺膝蓋抬起"
+msgstr "Flat Knee Raises"
 
 #: exercises/management/commands/populate_exercises.py:24
 msgid "Flat Bent Leg Raises"
-msgstr "平躺彎腿抬起"
+msgstr "Flat Bent Leg Raises"
 
 #: exercises/management/commands/populate_exercises.py:24
 msgid "Flat Frog Raises"
-msgstr "平躺青蛙抬腿"
+msgstr "Flat Frog Raises"
 
 #: exercises/management/commands/populate_exercises.py:24
 msgid "Flat Straight Leg Raises"
-msgstr "平躺直腿抬起"
+msgstr "Flat Straight Leg Raises"
 
 #: exercises/management/commands/populate_exercises.py:25
 msgid "Hanging Knee Raises"
-msgstr "懸垂膝蓋抬起"
+msgstr "Hanging Knee Raises"
 
 #: exercises/management/commands/populate_exercises.py:25
 msgid "Hanging Bent Leg Raises"
-msgstr "懸垂彎腿抬起"
+msgstr "Hanging Bent Leg Raises"
 
 #: exercises/management/commands/populate_exercises.py:25
 msgid "Hanging Frog Raises"
-msgstr "懸垂青蛙抬腿"
+msgstr "Hanging Frog Raises"
 
 #: exercises/management/commands/populate_exercises.py:25
 msgid "Partial Straight Leg Raises"
-msgstr "部分直腿抬起"
+msgstr "Partial Straight Leg Raises"
 
 #: exercises/management/commands/populate_exercises.py:25
 msgid "Hanging Straight Leg Raises"
-msgstr "懸垂直腿抬起"
+msgstr "Hanging Straight Leg Raises"
 
 #: exercises/management/commands/populate_exercises.py:27
 msgid "Bridge"
-msgstr "橋式"
+msgstr "Bridge"
 
 #: exercises/management/commands/populate_exercises.py:28
 msgid "Short Bridges"
-msgstr "短橋式"
+msgstr "Short Bridges"
 
 #: exercises/management/commands/populate_exercises.py:28
 msgid "Straight Bridges"
-msgstr "直橋式"
+msgstr "Straight Bridges"
 
 #: exercises/management/commands/populate_exercises.py:28
 msgid "Angled Bridges"
-msgstr "角度橋式"
+msgstr "Angled Bridges"
 
 #: exercises/management/commands/populate_exercises.py:28
 msgid "Head Bridges"
-msgstr "頭部橋式"
+msgstr "Head Bridges"
 
 #: exercises/management/commands/populate_exercises.py:28
 msgid "Half Bridges"
-msgstr "半程橋式"
+msgstr "Half Bridges"
 
 #: exercises/management/commands/populate_exercises.py:29
 msgid "Full Bridges"
-msgstr "完整橋式"
+msgstr "Full Bridges"
 
 #: exercises/management/commands/populate_exercises.py:29
 msgid "Wall Walking (Down)"
-msgstr "牆壁下行"
+msgstr "Wall Walking (Down)"
 
 #: exercises/management/commands/populate_exercises.py:29
 msgid "Wall Walking (Up)"
-msgstr "牆壁上行"
+msgstr "Wall Walking (Up)"
 
 #: exercises/management/commands/populate_exercises.py:29
 msgid "Closing Bridges"
-msgstr "收縮橋式"
+msgstr "Closing Bridges"
 
 #: exercises/management/commands/populate_exercises.py:29
 msgid "Stand-to-Stand Bridges"
-msgstr "站立到站立橋式"
+msgstr "Stand-to-Stand Bridges"
 
 #: exercises/management/commands/populate_exercises.py:31
 msgid "Handstand Push-Up"
-msgstr "倒立伏地挺身"
+msgstr "Handstand Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:32
 msgid "Wall Headstands"
-msgstr "牆壁頭倒立"
+msgstr "Wall Headstands"
 
 #: exercises/management/commands/populate_exercises.py:32
 msgid "Crow Stands"
-msgstr "烏鴉式站立"
+msgstr "Crow Stands"
 
 #: exercises/management/commands/populate_exercises.py:32
 msgid "Wall Handstands"
-msgstr "牆壁倒立"
+msgstr "Wall Handstands"
 
 #: exercises/management/commands/populate_exercises.py:32
 msgid "Half Handstand Push-Ups"
-msgstr "半程倒立伏地挺身"
+msgstr "Half Handstand Push-Ups"
 
 #: exercises/management/commands/populate_exercises.py:32
 msgid "Handstand Push-Ups"
-msgstr "倒立伏地挺身"
+msgstr "Handstand Push-Ups"
 
 #: exercises/management/commands/populate_exercises.py:33
 msgid "Close Handstand Push-Ups"
-msgstr "窄距倒立伏地挺身"
+msgstr "Close Handstand Push-Ups"
 
 #: exercises/management/commands/populate_exercises.py:33
 msgid "Uneven Handstand Push-Ups"
-msgstr "不平衡倒立伏地挺身"
+msgstr "Uneven Handstand Push-Ups"
 
 #: exercises/management/commands/populate_exercises.py:33
 msgid "1/2 One Arm Handstand Push-Up"
-msgstr "半程單臂倒立伏地挺身"
+msgstr "1/2 One Arm Handstand Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:33
 msgid "Lever Handstand Push-Up"
-msgstr "槓桿倒立伏地挺身"
+msgstr "Lever Handstand Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:33
 msgid "One Arm Handstand Push-Up"
-msgstr "單臂倒立伏地挺身"
+msgstr "One Arm Handstand Push-Up"
 
 #: exercises/management/commands/populate_exercises.py:38
 #: exercises/management/commands/populate_exercises.py:39
 msgid "L-Sit"
-msgstr "L 坐"
+msgstr "L-Sit"
 
 #: exercises/management/commands/populate_exercises.py:39
 msgid "Tuck Hold"
-msgstr "抱膝支撐"
+msgstr "Tuck Hold"
 
 #: exercises/management/commands/populate_exercises.py:39
 msgid "Flat Tuck Hold"
-msgstr "平躺抱膝支撐"
+msgstr "Flat Tuck Hold"
 
 #: exercises/management/commands/populate_exercises.py:39
 msgid "Flat Tuck L-Sit"
-msgstr "平躺抱膝 L 坐"
+msgstr "Flat Tuck L-Sit"
 
 #: exercises/management/commands/populate_exercises.py:39
 msgid "One Leg Flat Tuck L-Sit"
-msgstr "單腿平躺抱膝 L 坐"
+msgstr "One Leg Flat Tuck L-Sit"
 
 #: exercises/management/commands/populate_exercises.py:41
 #: exercises/management/commands/populate_exercises.py:42
 msgid "Back Lever"
-msgstr "後水平支撐"
+msgstr "Back Lever"
 
 #: exercises/management/commands/populate_exercises.py:42
 msgid "Tuck Back Lever"
-msgstr "抱膝後水平支撐"
+msgstr "Tuck Back Lever"
 
 #: exercises/management/commands/populate_exercises.py:42
 msgid "Flat Tuck Back Lever"
-msgstr "平躺抱膝後水平支撐"
+msgstr "Flat Tuck Back Lever"
 
 #: exercises/management/commands/populate_exercises.py:42
 msgid "One Leg Flat Tuck Back Lever"
-msgstr "單腿平躺抱膝後水平支撐"
+msgstr "One Leg Flat Tuck Back Lever"
 
 #: exercises/management/commands/populate_exercises.py:42
 msgid "Straddle Back Lever"
-msgstr "開腿後水平支撐"
+msgstr "Straddle Back Lever"
 
 #: exercises/management/commands/populate_exercises.py:44
 #: exercises/management/commands/populate_exercises.py:45
 msgid "Front Lever"
-msgstr "前水平支撐"
+msgstr "Front Lever"
 
 #: exercises/management/commands/populate_exercises.py:45
 msgid "Tuck Front Lever"
-msgstr "抱膝前水平支撐"
+msgstr "Tuck Front Lever"
 
 #: exercises/management/commands/populate_exercises.py:45
 msgid "Flat Tuck Front Lever"
-msgstr "平躺抱膝前水平支撐"
+msgstr "Flat Tuck Front Lever"
 
 #: exercises/management/commands/populate_exercises.py:45
 msgid "One Leg Flat Tuck Front Lever"
-msgstr "單腿平躺抱膝前水平支撐"
+msgstr "One Leg Flat Tuck Front Lever"
 
 #: exercises/management/commands/populate_exercises.py:45
 msgid "Straddle Front Lever"
-msgstr "開腿前水平支撐"
+msgstr "Straddle Front Lever"
 
 #: exercises/models.py:5 workouts/models.py:6
 msgid "名稱"
-msgstr "名稱"
+msgstr "Name"
 
 #: exercises/models.py:6
 msgid "類別"
-msgstr "類別"
+msgstr "Category"
 
 #: exercises/models.py:7 exercises/models.py:15 workouts/models.py:7
 msgid "描述"
-msgstr "描述"
+msgstr "Description"
 
 #: exercises/models.py:13
 msgid "技能"
-msgstr "技能"
+msgstr "Skill"
 
 #: exercises/models.py:14
-#, fuzzy
-#| msgid "進階級別"
 msgid "級別"
-msgstr "級別"
+msgstr "Level"
 
 #: workouts/models.py:14
 msgid "日期"
-msgstr "日期"
+msgstr "Date"
 
 #: workouts/models.py:15
 msgid "動作"
-msgstr "動作"
+msgstr "Exercise"
 
 #: workouts/models.py:16
 msgid "進階級別"
-msgstr "進階級別"
+msgstr "Progression Level"
 
 #: workouts/models.py:17
 msgid "組數"
-msgstr "組數"
+msgstr "Sets"
 
 #: workouts/models.py:18
 msgid "每組次數"
-msgstr "每組次數"
+msgstr "Reps Per Set"
 
 #: workouts/models.py:19
 msgid "備註"
-msgstr "備註"
+msgstr "Notes"

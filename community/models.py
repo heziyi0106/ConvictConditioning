@@ -23,6 +23,11 @@ class Comment(models.Model):
     )  # The user who made the comment
     content = models.TextField(_("內容"))  # The content of the comment
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("建立時間"))  # Timestamp for the comment
+    
+    class Meta:
+        verbose_name = _("評論")
+        verbose_name_plural = _("評論")
+        ordering = ["created_at"]
 
     def __str__(self):
         return f"Comment by {self.user.username} on {self.post.id}"
@@ -35,5 +40,10 @@ class Like(models.Model):
     )  # The user who liked the post
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("建立時間"))  # Timestamp for the like
 
+    class Meta:
+        verbose_name = _("讚")
+        verbose_name_plural = _("讚")
+        ordering = ["created_at"]
+        
     def __str__(self):
         return f"Like by {self.user.username} on {self.post.id}"
