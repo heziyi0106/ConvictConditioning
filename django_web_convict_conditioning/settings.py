@@ -34,36 +34,26 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "unfold",  # before django.contrib.admin
-    "unfold.contrib.filters",  # optional, if special filters are needed
-    "unfold.contrib.forms",  # optional, if special form elements are needed
-    "unfold.contrib.inlines",  # optional, if special inlines are needed
-    "unfold.contrib.import_export",  # optional, if django-import-export package is used
-    "unfold.contrib.guardian",  # optional, if django-guardian package is used
-    "unfold.contrib.simple_history",  # optional, if django-simple-history package is used
-    "django.contrib.admin",  # required
+    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
     # Custom apps
     "workouts",
     "analytics",
     "community",
     "exercises",
     "users",
+    
+    # django-ninja
+    'ninja',
+    
+    # django-tinymce
+    'tinymce',
 ]
-
-UNFOLD = {
-    "site_title": "囚徒健身日誌",  # 設定後台標題
-    "site_header": "囚徒健身後台",  # 設定後台標頭
-    "brand_logo": "/static/images/logo.jpeg",  # 設置自定義 Logo
-    "welcome_sign": "歡迎來到囚徒健身管理後台",  # 設置歡迎標語
-    "copyright": "© 2024 囚徒健身",  # 設置版權信息
-    "search_models": ["auth.User", "workouts.WorkoutSession"],  # 設置可搜索的模型
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

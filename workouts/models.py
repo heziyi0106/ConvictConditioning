@@ -1,8 +1,9 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django_web_convict_conditioning.common import Common
 
 
-class Exercise(models.Model):
+class Exercise(Common):
     name = models.CharField(_("名稱"), max_length=100)  # e.g., Push-Up, Pull-Up
     description = models.TextField(_("描述"), blank=True)  # Optional description of the exercise
 
@@ -14,7 +15,7 @@ class Exercise(models.Model):
         return self.name
 
 
-class WorkoutSession(models.Model):
+class WorkoutSession(Common):
     date = models.DateField(_("日期"))  # The date of the workout
     exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE, verbose_name=_("動作"))  # Related exercise
     progression_level = models.IntegerField(_("進階級別"))  # The progression level for the exercise
