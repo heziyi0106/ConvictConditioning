@@ -1,12 +1,12 @@
 from django.test import TestCase, Client
 from exercises.models import Skill
+from django.contrib.auth.models import User
 
 class SkillsAPITest(TestCase):
     def setUp(self):
         self.client = Client()
-        # 在測試數據庫中創建一個 Skill
-        self.skill = Skill.objects.create(name="Push-Up", category="Upper Body", description="Push-Up movements")
-
+        self.user = User.objects.create_user(username='testuser', password='12345')
+        self.skill = Skill.objects.create(name="Push-Up", description="Push-Up movements", user=self.user)
 
     def test_list_skills(self):
         response = self.client.get('/api/exercises/list')

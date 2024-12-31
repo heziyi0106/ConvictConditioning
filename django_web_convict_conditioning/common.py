@@ -5,7 +5,7 @@ class Common(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, verbose_name="使用者"
+        User, on_delete=models.CASCADE, default=1, verbose_name="使用者"
     )
 
     class Meta:
