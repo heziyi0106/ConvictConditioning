@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-30 18:14+0800\n"
+"POT-Creation-Date: 2024-12-31 09:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: community/models.py:8 community/models.py:22 community/models.py:34
+msgid "使用者"
+msgstr "使用者"
+
+#: community/models.py:10 community/models.py:24
+msgid "內容"
+msgstr "內容"
+
+#: community/models.py:12 community/models.py:25 community/models.py:36
+msgid "建立時間"
+msgstr "建立時間"
+
+#: community/models.py:20 community/models.py:32
+msgid "貼文"
+msgstr "貼文"
 
 #: exercises/models.py:5 workouts/models.py:6
 msgid "名稱"
