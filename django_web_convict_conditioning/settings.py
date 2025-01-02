@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     # Custom apps
     "workouts",
     "analytics",
-    "community",
+    'community.apps.CommunityConfig', # "community",
     "exercises",
     "users",
     
