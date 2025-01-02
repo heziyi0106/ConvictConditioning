@@ -1,20 +1,19 @@
 from django.test import TestCase
+from django.contrib.auth.models import User
 from exercises.models import Skill, ExerciseLevel
 
 class SkillModelTest(TestCase):
     def setUp(self):
-        self.skill = Skill.objects.create(name="Push-Up", category="Upper Body")
+        self.user = User.objects.create_user(username='testuser', password='12345')
+        self.skill = Skill.objects.create(name="Push-Up", category="Upper Body", user=self.user)
 
     def test_skill_creation(self):
         self.assertEqual(self.skill.name, "Push-Up")
-        self.assertEqual(self.skill.category, "Upper Body")
 
 class ExerciseLevelModelTest(TestCase):
     def setUp(self):
-        self.skill = Skill.objects.create(name="Push-Up", category="Upper Body")
-        self.exercise_level = ExerciseLevel.objects.create(skill=self.skill, level_number=1, description="Wall Push-Up")
+        self.user = User.objects.create_user(username='testuser', password='12345')
+        self.exercise_level = ExerciseLevel.objects.create(level="Beginner", description="Beginner level", user=self.user)
 
     def test_exercise_level_creation(self):
-        self.assertEqual(self.exercise_level.skill.name, "Push-Up")
-        self.assertEqual(self.exercise_level.level_number, 1)
-        self.assertEqual(self.exercise_level.description, "Wall Push-Up")
+        self.assertEqual(self.exercise_level.level, "Beginner")

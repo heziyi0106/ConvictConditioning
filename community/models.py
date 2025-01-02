@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
 from django_web_convict_conditioning.common import Common
 from tinymce.models import HTMLField
@@ -38,6 +37,9 @@ class Like(Common):
         verbose_name = _("讚")
         verbose_name_plural = _("讚")
         ordering = ["created_at"]
+        constraints = [
+            models.UniqueConstraint(fields=["user", "post"], name="unique_user_post_like"),
+        ]
         
     def __str__(self):
         return f"Like by {self.user.username} on {self.post.id}"

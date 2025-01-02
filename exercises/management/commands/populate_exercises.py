@@ -1,11 +1,12 @@
 from django.core.management.base import BaseCommand
 from django.utils.translation import gettext_lazy as _
+from exercises.models import Skill, ExerciseLevel
+from django.contrib.auth.models import User
 
 class Command(BaseCommand):
     help = _('Populate database with initial exercises and levels for Convict Conditioning')
 
     def handle(self, *args, **kwargs):
-        from exercises.models import Skill, ExerciseLevel
 
         big_six = [
             {"name": _("Push-Up"), "category": _("Upper Body"), "levels": [
@@ -45,7 +46,10 @@ class Command(BaseCommand):
                 _("Tuck Front Lever"), _("Flat Tuck Front Lever"), _("One Leg Flat Tuck Front Lever"), _("Straddle Front Lever"), _("Front Lever")
             ]},
         ]
-
+        
+        user = User.objects.first()  # 假設你有一個用戶
+        if not user:
+            user = User.objects.create_user(username='defaultuser', password='12345')
         for skill_data in big_six + trifecta:
             skill, created = Skill.objects.get_or_create(name=skill_data["name"], category=skill_data["category"])
             for level_number, level_name in enumerate(skill_data["levels"], start=1):

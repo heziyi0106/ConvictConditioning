@@ -22,6 +22,8 @@ class WorkoutSession(Common):
     sets = models.PositiveIntegerField(_("組數"))  # Number of sets completed
     reps_per_set = models.PositiveIntegerField(_("每組次數"))  # Number of repetitions per set
     notes = models.TextField(_("備註"), blank=True)  # Optional notes
+    is_completed = models.BooleanField(_("是否完成"), default=False)
+
 
     class Meta:
         verbose_name = _("訓練記錄")

@@ -51,8 +51,8 @@ INSTALLED_APPS = [
     # django-ninja
     'ninja',
     
-    # django-tinymce
-    'tinymce',
+    # # django-tinymce
+    # 'tinymce',
 ]
 
 MIDDLEWARE = [
